@@ -15,3 +15,12 @@ class Triangle extends Polygon {
     return
   }
 }
+
+class Square extends Polygon {
+  get isValid(){
+    let allSidesAreEqual = false;
+  }
+  get area(){
+    return this.sides[0]
+  }
+}
