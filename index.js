@@ -18,13 +18,13 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
   get isValid(){
-    let allSidesAreEqual = true;
+    let allSidesEqual = true;
     for(let i = 0; i < this.sides.length; i++){
       if(this.sides[i] !==){
 
       }
     }
-    return allSidesAreEqual
+    return allSidesEqual
   }
   get area(){
     return this.sides[0]
