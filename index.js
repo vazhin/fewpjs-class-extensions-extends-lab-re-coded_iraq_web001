@@ -13,7 +13,8 @@ class Polygon {
 class Triangle extends Polygon {
   get isValid(){
     let valid = true;
-    if((this.sides[0] + this.sides[1]) <= this.sides[2]){
+    let sumOfTwoSides = this.sides[0] + this.sides[1]
+    if(sumOfTwoSides !> this.sides[2]){
       valid = false
     }
     return valid
