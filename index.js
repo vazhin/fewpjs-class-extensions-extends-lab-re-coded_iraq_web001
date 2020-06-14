@@ -21,7 +21,8 @@ class Square extends Polygon {
     let allSidesEqual = true;
     for(let i = 0; i < this.sides.length - 1; i++){
       if(this.sides[i] !== this.sides[i + 1]){
-
+        allSidesEqual = false
+        break
       }
     }
     return allSidesEqual
