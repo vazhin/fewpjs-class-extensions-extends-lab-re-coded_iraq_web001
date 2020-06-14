@@ -12,10 +12,10 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid(){
-    let valid = true;
+    let valid = false;
     let sumOfTwoSides = this.sides[0] + this.sides[1]
-    if(sumOfTwoSides !> this.sides[2]){
-      valid = false
+    if(sumOfTwoSides > this.sides[2]){
+      valid = true
     }
     return valid
   }
