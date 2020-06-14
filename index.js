@@ -19,8 +19,8 @@ class Triangle extends Polygon {
 class Square extends Polygon {
   get isValid(){
     let allSidesEqual = true;
-    for(let i = 0; i < this.sides.length; i++){
-      if(this.sides[i] !==){
+    for(let i = 0; i < this.sides.length - 1; i++){
+      if(this.sides[i] !== this.sides[i + 1]){
 
       }
     }
