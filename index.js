@@ -28,6 +28,6 @@ class Square extends Polygon {
     return allSidesEqual
   }
   get area(){
-    return this.sides[0]
+    return this.sides[0] ** 2
   }
 }
