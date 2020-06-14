@@ -12,20 +12,27 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid(){
-    return
+    let valid = true;
+    for(let i = 0; i < this.sides.length - 1; i++){
+      if(this.sides[i] !== this.sides[i + 1]){
+        valid = false
+        break
+      }
+    }
+    return valid
   }
 }
 
 class Square extends Polygon {
   get isValid(){
-    let allSidesEqual = true;
+    let valid = true;
     for(let i = 0; i < this.sides.length - 1; i++){
       if(this.sides[i] !== this.sides[i + 1]){
-        allSidesEqual = false
+        valid = false
         break
       }
     }
-    return allSidesEqual
+    return valid
   }
   get area(){
     return this.sides[0] ** 2
